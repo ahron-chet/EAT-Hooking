@@ -9,8 +9,10 @@ The Export Address Table (EAT) is part of the Portable Executable (PE) format us
 ## Features
 
 - **EAT Manipulation**: Allows for the retrieval and modification of function addresses in the EAT.
-- **Memory Allocation Near Module**: Allocates executable memory close to a specified module, suitable for placing our hooking stubs.
-- **Function Hooking**: Redirects function calls by modifying their addresses in the EAT to point to our own custom functions.
+- **Memory Allocation After Module**: Allocates memory post-module to ensure our hooking address is larger than the module's base address, preventing negative RVA issues.
+  
+- **Assembly-Driven Redirection**: Uses assembly JMPs to redirect to our hook, recalculating the RVA based on the difference between the hook's address and the module's base, ensuring accurate address resolution.
+
 
 ## Usage
 
