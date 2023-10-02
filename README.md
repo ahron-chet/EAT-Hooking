@@ -1,6 +1,6 @@
-# EAT Hooking Library
+# EAT Hooking 
 
-This library focuses on manipulating the Export Address Table (EAT) to achieve function hooking in Windows binaries.
+This project focuses on manipulating the Export Address Table (EAT) to achieve function hooking in Windows binaries.
 
 ## Overview
 
