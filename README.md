@@ -6,8 +6,6 @@ This project focuses on manipulating the Export Address Table (EAT) to achieve f
 
 The Export Address Table (EAT) is part of the Portable Executable (PE) format used in Windows executables (like .exe, .dll files). It provides a table of functions that are exported by a module, making them accessible to other modules. By modifying the EAT, we can redirect calls to these functions to our own custom functions.
 
-## Features
-
 - **EAT Manipulation**: Allows for the retrieval and modification of function addresses in the EAT.
 - **Memory Allocation After Module**: Allocates memory post-module to ensure our hooking address is larger than the module's base address, preventing negative RVA issues.
   
