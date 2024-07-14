@@ -2,10 +2,6 @@
 #include <iostream>
 
 
-
-
-
-
 constexpr size_t ALLOC_SIZE_FOR_JMP = 12;
 constexpr size_t ALLOC_JUMP_64KB = 0x10000;
 
